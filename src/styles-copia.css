@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+:root{
+    --color-fondo   : #412A92;
+    --color-blanco  : #FFFFFF;
+    --color-gristo  : #ffd700;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-fondo);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+section img .wave-header{
+    position: relative;
+}
+
+.wave-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    position: fixed;
+    top: 1.3em;
+    left: 0;
+    right: 0;
+}
+
+.logo{
+    text-decoration: none;
+    color: var(--color-gristo);
+    letter-spacing: 1em;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+nav{
+    line-height: 43px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin-left: 1.5em;
+    color: var(--color-blanco);
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+nav ul li a:hover{
+    color: var(--color-gristo);
+}
+nav ul li a.active{
+    color: var(--color-gristo);
+}
+
+.love{
+    color: var(--color-gristo);
+}
+
+
+section .content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 80vh;
+}
+
+section .content h1{
+    position: absolute;
+    top: 0;
+    left: 2em;
+    text-align: center;
+    color: var(--color-blanco);
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+section .content .text{
+    position: relative;
+    margin: auto;
+    width: 40%;
+    color: var(--color-blanco);
+    letter-spacing: 1px;
+}
+section .content .text button{
+    border: none;
+    position: relative;
+    width: 8em;
+    top: .5em;
+    background: var(--color-gristo);
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--color-blanco);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+section .workin{
+    position: relative;
+    margin: auto;
+}
+.workin{
+    position: absolute;
+    width: 60%;
+    height: 60vh;
+    top: 0;
+    right: 0;
+    right: 0;
+    z-index: 10000;
+}
+section img .wave{
+    position: relative;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.redesSociales{
+    position: absolute;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    bottom: 2em;
+    z-index: 99999
+}
+.svg-icon{
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.toggleMenu{
+    display: none;
+}
+
+@media (max-width:768px){
+    section .content{
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        top: 0;
+    }
+    section .content h1{
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+    section .content .text{
+        position: relative;
+        margin: auto;
+        width: 100%;
+        color: var(--color-blanco);
+        letter-spacing: 1px;
+    }
+    .workin{
+        width: 80%;
+        height: 100vh;
+    }
+}
+
+@media (max-width:752px){
+    header{
+        position: fixed;
+        top: .5em;
+    }
+    .toggleMenu{
+        display: block;
+        color: var(--color-gristo);
+        cursor: pointer;
+        font-weight: 800;
+        line-height: 43px;
+    }
+    .listMenu{
+        display: none;
+    }
+    section img .wave-header{
+        position: relative;
+    }
+    .wave-header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 30vh;
+    }
+    .redesSociales{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        right: 1em;
+        bottom: 1em;
+    }
+}

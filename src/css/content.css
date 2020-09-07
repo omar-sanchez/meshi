@@ -1,0 +1,66 @@
+.banner-platos{
+    width: 100%;
+    height: auto;
+    background: var(--color-fondo);
+    position: relative;
+    margin-top: 2em;
+}
+.contentMenu{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.contentMenu .contentInfo .img{
+    width: 15em;
+}
+
+.contentInfo p{
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    border-radius: 2em;
+    text-align: center;
+    line-height: 4em;
+    background: var(--color-section);
+    color: var(--color-letra);
+    font-weight: 600;
+}
+
+.contentInfo a{
+    width: 14em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--color-fondo);
+    font-weight: 600;
+    background: var(--color-button);
+    border: var(--color-b-button);
+    border-radius: 1.5em;
+    margin: 1em;
+    padding: .5em;
+}
+
+@media (max-width:720px){
+    .contentMenu{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+/* @media screen and (max-width:360px){
+    .contentMenu{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+} */
