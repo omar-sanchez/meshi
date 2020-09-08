@@ -5,7 +5,7 @@ const OptimizeCssAssetsPlugin   = require('optimize-css-assets-webpack-plugin');
 const CopyPlugin                = require('copy-webpack-plugin');
 const MinifyPlugin              = require('babel-minify-webpack-plugin')
 const { CleanWebpackPlugin }    = require('clean-webpack-plugin');
-
+const ImaginPlugin              = require('imagemin-webpack');
 
 module.exports = {
     
@@ -77,6 +77,7 @@ module.exports = {
                 { from: 'src/assets/', to: 'assets/' }
             ]
         }),
+        new ImaginPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
         new MinifyPlugin(),
         new CleanWebpackPlugin()
     ]

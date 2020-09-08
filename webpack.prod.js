@@ -6,7 +6,6 @@ const CopyPlugin                = require('copy-webpack-plugin');
 const MinifyPlugin              = require('babel-minify-webpack-plugin')
 const { CleanWebpackPlugin }    = require('clean-webpack-plugin');
 
-
 module.exports = {
     
     mode: 'production',
@@ -79,5 +78,6 @@ module.exports = {
         }),
         new MinifyPlugin(),
         new CleanWebpackPlugin()
+
     ]
 }
